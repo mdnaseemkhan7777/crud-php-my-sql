@@ -36,7 +36,8 @@
       <td><?php echo $res['id'] ?></td>
       <td><?php echo $res['username'] ?></td>
       <td><?php echo $res['password'] ?></td>
-      <td><a href="delete.php"><input type="button" class="btn btn-primary" value="delete"></a></td>
+      <td><a href="delete.php?id=<?php echo $res['id'] ?>"><input type="button" class="btn btn-primary" value="delete"></a></td>
+      <td><a href="update.php?id=<?php echo $res['id'] ?>"><input type="button" class="btn btn-primary" value="update"></a></td>
       
     </tr>
     <tr>  
